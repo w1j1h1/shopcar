@@ -1,0 +1,28 @@
+2020-04-13 14:09:21.961 [ restartedMain ] - [ INFO  ] [ com.project.shopcar.ShopcarApplication : 55 ] - Starting ShopcarApplication on LAPTOP-9K7M6DPH with PID 18072 (E:\software\tool\git\githublocal\shopcar\shopcar\target\classes started by 10706 in E:\software\tool\git\githublocal\shopcar)
+2020-04-13 14:09:21.963 [ restartedMain ] - [ INFO  ] [ com.project.shopcar.ShopcarApplication : 651 ] - No active profile set, falling back to default profiles: default
+2020-04-13 14:09:22.013 [ restartedMain ] - [ INFO  ] [ o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor : 225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-13 14:09:22.014 [ restartedMain ] - [ INFO  ] [ o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor : 225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-13 14:09:22.626 [ restartedMain ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-13 14:09:22.628 [ restartedMain ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 127 ] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-13 14:09:22.651 [ restartedMain ] - [ INFO  ] [ o.s.d.r.config.RepositoryConfigurationDelegate : 187 ] - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-04-13 14:09:23.195 [ restartedMain ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 92 ] - Tomcat initialized with port(s): 8081 (http)
+2020-04-13 14:09:23.203 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8081"]
+2020-04-13 14:09:23.204 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-04-13 14:09:23.204 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-13 14:09:23.282 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-04-13 14:09:23.282 [ restartedMain ] - [ INFO  ] [ org.springframework.web.context.ContextLoader : 284 ] - Root WebApplicationContext: initialization completed in 1268 ms
+2020-04-13 14:09:23.584 [ restartedMain ] - [ INFO  ] [ ROOT : 45 ] - shopcar项目启动
+2020-04-13 14:09:23.789 [ restartedMain ] - [ INFO  ] [ io.lettuce.core.EpollProvider : 68 ] - Starting without optional epoll library
+2020-04-13 14:09:23.792 [ restartedMain ] - [ INFO  ] [ io.lettuce.core.KqueueProvider : 70 ] - Starting without optional kqueue library
+2020-04-13 14:09:24.532 [ restartedMain ] - [ INFO  ] [ o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181 ] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 14:09:24.581 [ restartedMain ] - [ INFO  ] [ o.s.b.a.web.servlet.WelcomePageHandlerMapping : 58 ] - Adding welcome page template: index
+2020-04-13 14:09:24.731 [ restartedMain ] - [ INFO  ] [ o.s.b.d.autoconfigure.OptionalLiveReloadServer : 58 ] - LiveReload server is running on port 35729
+2020-04-13 14:09:25.299 [ restartedMain ] - [ INFO  ] [ o.s.s.a.ScheduledAnnotationBeanPostProcessor : 297 ] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-04-13 14:09:25.305 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8081"]
+2020-04-13 14:09:25.318 [ restartedMain ] - [ INFO  ] [ o.s.boot.web.embedded.tomcat.TomcatWebServer : 204 ] - Tomcat started on port(s): 8081 (http) with context path ''
+2020-04-13 14:09:25.320 [ restartedMain ] - [ INFO  ] [ com.project.shopcar.ShopcarApplication : 61 ] - Started ShopcarApplication in 3.86 seconds (JVM running for 5.146)
+2020-04-13 14:09:54.395 [ http-nio-8081-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-13 14:09:54.395 [ http-nio-8081-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 525 ] - Initializing Servlet 'dispatcherServlet'
+2020-04-13 14:09:54.403 [ http-nio-8081-exec-1 ] - [ INFO  ] [ org.springframework.web.servlet.DispatcherServlet : 547 ] - Completed initialization in 8 ms
+2020-04-13 14:10:00.033 [ springSessionRedisMessageListenerContainer-3 ] - [ INFO  ] [ ROOT : 45 ] - session会话被创建:0461cab3-af71-4723-a1d3-a445f5cd2afb
+2020-04-13 14:11:00.099 [ springSessionRedisMessageListenerContainer-5 ] - [ INFO  ] [ ROOT : 45 ] - session会话过期:0461cab3-af71-4723-a1d3-a445f5cd2afb
