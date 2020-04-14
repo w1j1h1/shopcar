@@ -19,11 +19,11 @@ public class ShopCarFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest)servletRequest;
         String url = request.getRequestURI();
-        System.out.println("filter:   "+url);
+//        System.out.println("filter:   "+url);
         if (url.indexOf("/css/") == -1 && url.indexOf("/js/") == -1
                 && url.indexOf("/image/") == -1 && url.indexOf("/favicon.ico") == -1
                 && url.indexOf("/webjars/") == -1 && url.indexOf("/error") == -1) {
-            System.out.println("这里是过滤器");
+//            System.out.println("这里是过滤器");
         }
         filterChain.doFilter(servletRequest, servletResponse);
     }

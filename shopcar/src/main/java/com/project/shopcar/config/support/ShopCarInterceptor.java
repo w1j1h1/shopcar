@@ -20,19 +20,21 @@ public class ShopCarInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String sj = request.getParameter("sj");
-        String redisToken = (String) redisUtils.get(sj + "_token") == null ? " " : (String) redisUtils.get(sj + "_token");
-        HttpSession session = request.getSession();
-        String sessionToken = (String) session.getAttribute("token");
-        System.out.println("interceptor:   "+request.getRequestURI());
-        if (redisToken.equals(sessionToken)) {
-            redisUtils.set(sj + "_token", redisToken, Constant.token_expire_time);
-            return true;
-        } else {
-//            LogUtil.info("bei lan jie le ");
-            System.out.println("这里拦截了");
-            return true;
-        }
+        return true;
+        //token令牌，用于前后端分离token验证
+//        String sj = request.getParameter("sj");
+//        String redisToken = (String) redisUtils.get(sj + "_token") == null ? " " : (String) redisUtils.get(sj + "_token");
+//        HttpSession session = request.getSession();
+//        String sessionToken = (String) session.getAttribute("token");
+//        System.out.println("interceptor:   "+request.getRequestURI());
+//        if (redisToken.equals(sessionToken)) {
+//            redisUtils.set(sj + "_token", redisToken, Constant.token_expire_time);
+//            return true;
+//        } else {
+////            LogUtil.info("bei lan jie le ");
+//            System.out.println("这里拦截了");
+//            return true;
+//        }
     }
 
     @Override

@@ -3,13 +3,10 @@ package com.project.shopcar.controller;
 import com.project.shopcar.config.Constant;
 import com.project.shopcar.config.SessionConfig;
 import com.project.shopcar.mapper.TestMapper;
-import com.project.shopcar.utils.LogUtil;
 import com.project.shopcar.utils.RedisUtils;
-import com.sun.xml.internal.ws.resources.HttpserverMessages;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -21,6 +18,7 @@ import java.util.UUID;
 
 @Controller
 @RequestMapping("/test")
+//@PreAuthorize("hasAuthority('admin1')")//方法授权注解，可以写在controller上，也可以写在controller内部方法里头
 public class testController {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
@@ -33,10 +31,8 @@ public class testController {
 
     @RequestMapping("/hello")
     @ResponseBody
+//    @PreAuthorize("hasAuthority('admin1')")
     public String hello(HttpServletRequest request, HttpServletResponse response) {
-        String aa = request.getParameter("aa");
-        System.out.println(aa);
-        System.out.println(aa);
         HttpSession session = request.getSession();
         System.out.println(testMapper.getTestAll().get(0).toString());
 
@@ -77,5 +73,23 @@ public class testController {
     @ResponseBody
     public String online() {
         return "当前在线人数：" + SessionConfig.online;
+    }
+
+    @RequestMapping("userLogin")
+    public String userLogin() {
+        System.out.println("userLogin");
+        return "userLogin";
+    }
+
+    @RequestMapping("adminLogin")
+    public String adminLogin() {
+        System.out.println("adminLogin");
+        return "adminLogin";
+    }
+
+    @RequestMapping("businessLogin")
+    public String businessLogin() {
+        System.out.println("businessLogin");
+        return "businessLogin";
     }
 }
